@@ -47,4 +47,12 @@ and replacing `model_dir` with the upper-most directory of the model which can b
     --dict_path $model_dir/words.txt 2>&1 | tee log.txt
 ```
 
-using `--output_nbest` if you would like to output the n-best results of the model.
+using `--output_nbest` if you would like to output the n-best results of the model, and `--result file_name` to store the output.
+
+- To run WER analysis, call `wer.py` with the following arguments
+
+```sh
+python wer.py reference_file prediction_file
+```
+
+keep in mind that the prediction file outputted by the model includes the word "test" at the beginning of every run.
