@@ -17,8 +17,7 @@ pip install -r requirements.txt
 conda install pytorch=1.10.0 torchvision torchaudio=0.10.0 cudatoolkit=11.1 -c pytorch -c conda-forge
 ```
 
-- Optionally, if you want to use x86 runtime or language model(LM),
-you have to build the runtime as follows. Otherwise, you can just ignore this step.
+- To use the x86 runtime, run
 
 ``` sh
 # runtime build requires cmake 3.14 or above
