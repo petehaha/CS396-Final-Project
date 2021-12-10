@@ -1,3 +1,5 @@
+# Adapted from undertheseanlp
+
 import sys
 import numpy
 def calculate_wer(reference, hypothesis):
