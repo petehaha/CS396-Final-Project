@@ -36,7 +36,7 @@ model_dir=your_model_dir
 ```
 
 replacing `your_test_wav_path` with the wav path of your file, at a 16000Hz sampling rate and with mono channels.
-and replacing `model_dir` with the upper-most directory of the model.
+and replacing `model_dir` with the upper-most directory of the model which can be downloaded (here)[http://mobvoi-speech-public.ufile.ucloud.cn/public/wenet/gigaspeech/20210728_u2pp_conformer_server.tar.gz].
 
 - Then, run 
 
