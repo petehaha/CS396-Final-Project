@@ -21,7 +21,7 @@ conda install pytorch=1.10.0 torchvision torchaudio=0.10.0 cudatoolkit=11.1 -c p
 
 ``` sh
 # runtime build requires cmake 3.14 or above
-cd runtime/server/x86
+cd wenet/runtime/server/x86
 mkdir build && cd build && cmake .. && cmake --build .
 ```
 
