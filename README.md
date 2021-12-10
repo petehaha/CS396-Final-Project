@@ -35,8 +35,8 @@ wav_path=your_test_wav_path
 model_dir=your_model_dir
 ```
 
-replacing your_test_wav_path with the wav path of your file, at a 16000Hz sampling rate and with mono channels.
-and replacing model_dir with the upper-most directory of the model.
+replacing `your_test_wav_path` with the wav path of your file, at a 16000Hz sampling rate and with mono channels.
+and replacing `model_dir` with the upper-most directory of the model.
 
 - Then, run 
 
