@@ -26,7 +26,7 @@ cd runtime/server/x86
 mkdir build && cd build && cmake .. && cmake --build .
 ```
 
-To run an audio file, run
+- To run an audio file, run
 
 ```sh
 export GLOG_logtostderr=1
@@ -38,7 +38,7 @@ model_dir=your_model_dir
 replacing your_test_wav_path with the wav path of your file, at a 16000Hz sampling rate and with mono channels.
 and replacing model_dir with the upper-most directory of the model.
 
-Then, run
+- Then, run 
 
 ```sh
 ./build/decoder_main \
