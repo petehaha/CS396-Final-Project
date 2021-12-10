@@ -1,19 +1,10 @@
-import sys
-def calculate_wer(reference, hypothesis):
-    """
-        Calculation of WER with Levenshtein distance.
-        Works only for iterables up to 254 elements (uint8).
-        O(nm) time and space complexity.
+# Adapted from undertheseanlp
 
-        >>> calculate_wer("who is there".split(), "is there".split())
-        1
-        >>> calculate_wer("who is there".split(), "".split())
-        3
-        >>> calculate_wer("".split(), "who is there".split())
-        3
-    """
+import sys
+import numpy
+def calculate_wer(reference, hypothesis):
+
     # initialisation
-    import numpy
     d = numpy.zeros((len(reference) + 1) * (len(hypothesis) + 1),
                     dtype=numpy.uint8)
     d = d.reshape((len(reference) + 1, len(hypothesis) + 1))
@@ -44,6 +35,4 @@ if __name__ == "__main__":
     with open(sys.argv[2], 'r') as file:
         t = " ".join(file.readlines())
   
-    print(calculate_wer(o.split(), t.split()))
-    print(o.split(), t.split())
-print("hello")
+    print("WER: ", calculate_wer(o.split(), t.split()))
