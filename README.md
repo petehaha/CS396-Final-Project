@@ -48,4 +48,4 @@ and replacing `model_dir` with the upper-most directory of the model.
     --dict_path $model_dir/words.txt 2>&1 | tee log.txt
 ```
 
-using --output_nbest if you would like to output the n-best results of the model.
+using `--output_nbest` if you would like to output the n-best results of the model.
