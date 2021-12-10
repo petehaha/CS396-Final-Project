@@ -1,0 +1,16 @@
+I1207 19:22:51.092628 125494720 params.h:100] Reading model /Users/peterha/Downloads/20210728_u2pp_conformer_server/final.zip
+libc++abi.dylib: terminating with uncaught exception of type c10::Error: PytorchStreamReader failed reading zip archive: not a ZIP archive
+Exception raised from valid at ../caffe2/serialize/inline_container.cc:158 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) + 98 (0x10200c522 in libc10.dylib)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) + 106 (0x10200ac3a in libc10.dylib)
+frame #2: caffe2::serialize::PyTorchStreamReader::valid(char const*, char const*) + 128 (0x108f73300 in libtorch_cpu.dylib)
+frame #3: caffe2::serialize::PyTorchStreamReader::init() + 315 (0x108f727eb in libtorch_cpu.dylib)
+frame #4: caffe2::serialize::PyTorchStreamReader::PyTorchStreamReader(std::__1::shared_ptr<caffe2::serialize::ReadAdapterInterface>) + 217 (0x108f73229 in libtorch_cpu.dylib)
+frame #5: torch::jit::load(std::__1::shared_ptr<caffe2::serialize::ReadAdapterInterface>, c10::optional<c10::Device>, std::__1::unordered_map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > >&) + 218 (0x10a9c0a3a in libtorch_cpu.dylib)
+frame #6: torch::jit::load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, c10::optional<c10::Device>, std::__1::unordered_map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > >&) + 119 (0x10a9c0df7 in libtorch_cpu.dylib)
+frame #7: torch::jit::load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, c10::optional<c10::Device>) + 43 (0x10a9c0ceb in libtorch_cpu.dylib)
+frame #8: wenet::TorchAsrModel::Read(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int) + 116 (0x10176a204 in decoder_main)
+frame #9: wenet::InitDecodeResourceFromFlags() + 231 (0x10158a257 in decoder_main)
+frame #10: main + 131 (0x10158bd43 in decoder_main)
+frame #11: start + 1 (0x7fff6168d3d5 in libdyld.dylib)
+
