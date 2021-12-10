@@ -1,0 +1,11 @@
+wav test
+candidate -5.81627 beja
+candidate -7.26706 bez yeah
+candidate -7.30448 be
+candidate -7.45259 beger
+candidate -8.69734 bezja
+candidate -9.06288 be ah
+candidate -9.2232 beia
+candidate -10.6507 be yeah
+candidate -10.9735 beer
+candidate -11.4452 beure

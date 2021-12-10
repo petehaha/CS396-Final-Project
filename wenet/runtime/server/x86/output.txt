@@ -1,0 +1,11 @@
+wav test
+candidate -4.57328 yeah charter
+candidate -5.61227 yeah charter to
+candidate -6.23646 yeah chart or
+candidate -6.55186 yeah chart to
+candidate -6.71223 yeah charter you
+candidate -6.80153 yeah chart ah
+candidate -8.44816 yeah chart
+candidate -9.85638 yeah chart you
+candidate -10.7071 yeah chart to to
+candidate -11.455 yeah chart to you
