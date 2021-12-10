@@ -1,8 +1,8 @@
 import sys
+import numpy
 def calculate_wer(reference, hypothesis):
 
     # initialisation
-    import numpy
     d = numpy.zeros((len(reference) + 1) * (len(hypothesis) + 1),
                     dtype=numpy.uint8)
     d = d.reshape((len(reference) + 1, len(hypothesis) + 1))
